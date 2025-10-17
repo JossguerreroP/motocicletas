@@ -1,0 +1,82 @@
+/* ======= GENERAL CONTAINER ======= */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+/* ======= WELCOME SECTION ======= */
+.welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 70vh;
+  background: linear-gradient(135deg, #111, #272727);
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.welcome-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.welcome-content p {
+  font-size: 1.3rem;
+  color: #ddd;
+}
+
+/* ======= INTRO SECTION ======= */
+.intro-section {
+  background-color: #f9f9f9;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-content p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* ======= RESPONSIVE DESIGN ======= */
+@media (max-width: 768px) {
+  .welcome-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .welcome-content p {
+    font-size: 1.1rem;
+  }
+
+  .intro-content p {
+    font-size: 1rem;
+  }
+}
