@@ -1,1 +1,14 @@
-<p>bikeproducts works!</p>
+<p> Top Motorbikezone !</p>
+
+<div class="card-grid">
+      <div class="card" *ngFor="let bike of bikes">
+        <img [src]="bike.imageUrl" [alt]="bike.name" class="card-img" />
+        <div class="card-content">
+          <h3>{{ bike.name }}</h3>
+          <p><strong>Brand:</strong> {{ bike.brand }}</p>
+          <p><strong>Model:</strong> {{ bike.model }}</p>
+          <p><strong>Max Speed:</strong> {{ bike.maxSpeed }} km/h</p>
+          <p><strong>Price:</strong> ${{ bike.price }}</p>
+        </div>
+      </div>
+    </div>

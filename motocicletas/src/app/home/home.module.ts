@@ -7,7 +7,7 @@ import { BikeproductsComponent } from '../bikeproducts/bikeproducts.component';
   declarations: [],
   imports: [
     CommonModule,
-    
+    BikeproductsComponent
   ]
 })
 export class HomeModule { 
